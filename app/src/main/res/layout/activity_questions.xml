@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    tools:context=".QuestionsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp"
+        android:gravity="center"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/questionTV"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#363A43"
+            android:textSize="22sp"
+            android:text="What is the question?"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/progressBarLayout"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="16dp"
+            >
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="?android:attr/progressBarStyleHorizontal"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:max="10"
+                android:minHeight="50dp"
+                android:progress="0"
+                android:indeterminate="false"/>
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/progress"
+                android:padding="15dp"
+                android:gravity="center"
+                android:textColorHint="#7A8089"
+                android:textSize="14sp"
+                tools:text="0/10"/>
+
+        </LinearLayout>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Option One"
+            android:id="@+id/optionOneTV"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/defaultbtn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Option Two"
+            android:id="@+id/optionTwoTV"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/defaultbtn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Option Three"
+            android:id="@+id/optionThreeTV"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/defaultbtn"
+            />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            tools:text="Option Four"
+            android:id="@+id/optionFourTV"
+            android:layout_margin="10dp"
+            android:gravity="center"
+            android:textColor="#7A8089"
+            android:textSize="18sp"
+            android:padding="15dp"
+            android:background="@drawable/defaultbtn"
+            />
+
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/submitbtn"
+            android:layout_margin="10dp"
+            android:background="@color/colorPrimary"
+            android:text="submit"
+            android:textStyle="bold"
+            android:textSize="18sp"
+            android:textColor="#FFF"/>
+
+    </LinearLayout>
+
+</ScrollView>

@@ -1,0 +1,170 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+
+    android:background="@color/colorPrimary"
+    android:orientation="vertical"
+    tools:context=".AnswerActivity">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:background="#FFFFFF"
+        app:cardCornerRadius="8dp"
+        app:cardElevation="5dp"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/background_light"
+            android:orientation="vertical"
+            android:padding="16dp">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Answers"
+                android:textColor="#363A63"
+                android:textSize="30sp"
+                android:textStyle="bold"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="10dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="1.Kalpana Chawla"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="2.Rakesh Sharma"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="3.Phu Dorji"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="4.Shah Jahan"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="5.Rabinbranath Tagore"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="6.CV Raman"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="7.Arundhati Roy"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="8.Dr. Rajendra Prasad"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="9.Reita Faria"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="10.Rabindranath Tagore"
+                android:textColor="#363A63"
+                android:textSize="25sp"
+                android:fontFamily="@font/lato_bold"
+                android:layout_marginTop="15dp"
+                />
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnFinish"
+        android:text="Play Again"
+        android:textColor="@color/colorPrimary"
+        android:background="#fff"
+        android:gravity="center"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:layout_margin="20dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/btnExit"
+        android:text="Exit"
+        android:textColor="@color/colorPrimary"
+        android:textSize="18sp"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:layout_marginRight="20dp"
+        android:layout_marginLeft="20dp"
+        android:background="#fff"
+        />
+
+
+
+</LinearLayout>
