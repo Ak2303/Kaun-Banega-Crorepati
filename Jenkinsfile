@@ -8,26 +8,24 @@ pipeline {
                 bat "echo 'Build Finish' "
             }
         }
-        stage('Permissions') {
-              // This stage is set to access some permissions in Ubuntu machine
+        stage('Compile') {
               steps {
-
-                bat "echo '-------------------Asking for permissions--------------------'"
-
-                bat 'dir -la ./gradlew'
-                bat 'attrib +x ./gradlew'
-                bat 'dir -la ./gradlew'
-              }
-              post {
-                success {
-                  // Notify permissions granted
-                  bat "echo 'Permissions granted!!'"
-                }
-                failure {
-                  // Notify permissions denied
-                  bat "echo 'Oops!! Permissions denied.'"
-                }
-              }
+        bat "echo '-------------------Compiling App and its dependencies--------------------'"
+        
+        // Compile the app and its dependencies
+        bat './gradlew compileDebugSources'
+      }
+      post {
+        success {
+          // Notify compile successful
+          bat "echo 'App compiled successfully.'"
+        }
+        failure {
+          // Notify compile failed
+          bat "echo 'Compile failed!!'"
+        }
+      }
+    }
         }
 
     }
