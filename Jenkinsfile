@@ -1,9 +1,11 @@
 pipeline {
-    agent { docker { image 'maven:3.3.3' } }
+    agent {
+        label 'android'
+     }
     stages {
         stage('build') {
             steps {
-                sh 'mvn --version'
+                sh "echo 'Build Finish' "
             }
         }
     }
