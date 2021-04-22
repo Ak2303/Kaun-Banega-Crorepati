@@ -11,20 +11,20 @@ pipeline {
               // This stage is set to access some permissions in Ubuntu machine
               steps {
 
-                sh "echo '-------------------Asking for permissions--------------------'"
+                bat "echo '-------------------Asking for permissions--------------------'"
 
-                sh 'ls -la ./gradlew'
-                sh 'chmod +x ./gradlew'
-                sh 'ls -la ./gradlew'
+                bat 'ls -la ./gradlew'
+                bat 'chmod +x ./gradlew'
+                bat 'ls -la ./gradlew'
               }
               post {
                 success {
                   // Notify permissions granted
-                  sh "echo 'Permissions granted!!'"
+                  bat "echo 'Permissions granted!!'"
                 }
                 failure {
                   // Notify permissions denied
-                  sh "echo 'Oops!! Permissions denied.'"
+                  bat "echo 'Oops!! Permissions denied.'"
                 }
               }
             }
