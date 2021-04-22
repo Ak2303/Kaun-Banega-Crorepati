@@ -28,8 +28,7 @@ pipeline {
                   bat "echo 'Oops!! Permissions denied.'"
                 }
               }
-            }
-
         }
+
     }
 }
