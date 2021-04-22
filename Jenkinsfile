@@ -7,6 +7,7 @@ pipeline {
             steps {
                 bat "echo 'Build Finish' "
             }
+        }
         stage('Permissions') {
               // This stage is set to access some permissions in Ubuntu machine
               steps {
