@@ -8,25 +8,27 @@ pipeline {
                 bat "echo 'Build Finish' "
             }
         }
-        stage('Compile') {
-              steps {
-        bat "echo '-------------------Compiling App and its dependencies--------------------'"
-        
-        // Compile the app and its dependencies
-        bat './gradlew compileDebugSources'
+        stage('Permissions') {
+
+      steps {
+
+        bat "echo '-------------------Asking for permissions--------------------'"
+
+        bat 'dir -la .\gradlew'
+        bat 'attrib +x .\gradlew'
+        bat 'dir -la .\gradlew'
       }
       post {
         success {
-          // Notify compile successful
-          bat "echo 'App compiled successfully.'"
+          // Notify permissions granted
+          bat "echo 'Permissions granted!!'"
         }
         failure {
-          // Notify compile failed
-          bat "echo 'Compile failed!!'"
+          // Notify permissions denied
+          bat "echo 'Oops!! Permissions denied.'"
         }
       }
     }
-        }
-
     }
+}
 
