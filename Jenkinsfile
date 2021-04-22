@@ -5,7 +5,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh "echo 'Build Finish' "
+                bat "echo 'Build Finish' "
             }
         }
     }
