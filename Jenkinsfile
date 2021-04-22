@@ -14,9 +14,9 @@ pipeline {
 
                 bat "echo '-------------------Asking for permissions--------------------'"
 
-                bat 'dir -la ./gradlew.bat'
-                bat 'attrib +x ./gradlew.bat'
-                bat 'dir -la ./gradlew.bat'
+                bat 'dir -la ./gradlew'
+                bat 'attrib +x ./gradlew'
+                bat 'dir -la ./gradlew'
               }
               post {
                 success {
